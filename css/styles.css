@@ -1,0 +1,140 @@
+:root {
+	--color-primary: #FFFFFF;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #1E1E1E;
+	color: var(--color-primary);
+}
+
+.page {
+	max-height: 1117px;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 24px 140px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 0 16px;
+}
+
+nav ul li a {
+	color: var(--color-primary);
+	text-decoration: none;
+	font-size: 1.8rem;
+}
+
+nav .logo {
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+nav .menu {
+	display: flex;
+}
+
+nav .links {
+	display: flex;
+	font-size: 1.5rem;
+}
+
+nav .links i {
+	padding: 5px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+main .body__container {
+	width: 46%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+
+main .body__container h1 {
+	font-size: 8rem;
+	background: linear-gradient(90deg, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+main .body__container h2 {
+	font-size: 8rem;
+}
+
+main .body__container p {
+	font-size: 2rem;
+	text-align: center;
+}
+
+main .body__container .body__container__button {
+	margin: 40px;
+}
+
+main .body__container .body__container__button a {
+	text-decoration: none;
+	color: var(--color-primary);
+	font-size: 2rem;
+	border: 1px solid #FFFFFF;
+	padding: 12px 16px;
+	border-radius: 22px;
+	margin: 10px;
+}
+
+main .body__container .body__container__button .get-started {
+	position: relative;
+	border: 1px solid transparent;
+}
+
+main .body__container .body__container__button .get-started::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50px;
+	padding: 1px;
+	background: linear-gradient(90deg, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5);
+	mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+}
+
+footer {
+	height: 450px;
+	background-image: url('../img/32bc57ac8f15e471325f9bbfae17cd55.png');
+	background-size: cover;
+}
+
+footer .image__footer {
+	position: absolute;
+
+}
+
+footer .image__footer img {
+	position: relative;
+	width: 90%;
+}
